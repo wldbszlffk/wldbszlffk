@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to photographer Jiyun's web</title>
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+        function login(){
+                  let id = document.getElementById("id").value;
+                  let pw = document.getElementById("pw").value;
+                  if(id==="admin"){
+                     if(pw=="1234"){
+                        document.getElementById("login").innerHTML="<h2>" + id + 
+                        "alert으로 로그인이 되었습니다 </h2>"; 
+                     } else {
+                         alert("비밀번호를 확인하세요");
+                     }
+                }else{
+                     alert("회원가입을 하세요");
+                }
+           }
+           function w3_open(){
+             document.getElementById("mySidebar").style.display = "block";
+          }
+           function w3_close(){
+             document.getElementById("mySidebar").style.display = "none";
+          }
+</script>  
+    <style>
+        *{font-family: Georgia, serif;}
+        body{max-width: 950px;
+        margin: 0 auto ;}
+        header h1 {display: inline;}
+        header img {height: 100px;}
+        ul {list-style: none;}
+        a{text-decoration: none; }
+        nav ul {
+            text-align: center; border-top: 2px solid #008B8B;
+            border-bottom: 2px solid #008B8B; padding: 15px 10px;
+        }
+        nav ul li:hover{
+            background-color: #008B8B;
+        }
+        nav li a:hover{
+            color: bisque;
+        }
+        nav ul li {
+            display: inline;
+            padding: 15px 20px;
+            letter-spacing: 5px;
+        }
+    </style>
+    <div class="w3-sidebar w3-bar-block	w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+    <div class="w3-white">
+        <button class="w3-button w3-indigo w3-white" style="display: flex;"w3_open()>☰</button>
+        
+    </div>
+</head>
+<body class="w3-margin-top">
+    <header>
+        <img src="./images/최종.jpg" alt="me">
+        <h1 style="background-position: center; font-family: Georgia, serif; font-weight: bold;">Take a picture of the moment</h1>
+    </header>
+    
+    <nav>
+       <!--.navi>ul>li*4>a[href="sub&&.html"]{menu_&&}-->
+       <div class="navi">
+       <ul>
+            <li><a href="#Studio">Studio</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#produce-album">Produce-album</a></li>
+            <li><a href="#Video">Video</a></li>
+            <li><a href="#Recruitment">Recruitment</a></li>
+        </ul>
+       </div>
+    </nav>
+    
+    <section class="w3-container" style="width: 70%;">
+     <article class="main">
+        <div id="photo" class="w3-center">
+            <img src="./images/b0632dadbde9e94e7118d0cb6edb0cf2.jpg" classs="w3-border w3-padding" alt="me" style="margin-block-start: 0%; width: 570px; height: 450px; border: 10px solid ivory;">
+            <br>
+            </div>
+            <div class="media">
+               <img src="./images/IMG_6200.JPG" style="margin-top: 10% ; width: 700px; height: 600px;">
+               <h2 style="margin-left: 30px;">My Favorite Music</h2>
+               <iframe width="600" height="495" style="display: block; margin: 0 auto; width: 600px; height: 495px; border: 10px solid ivory;" src="https://www.youtube.com/embed/IgPcbE--mMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+                
+                <h2 style="margin-left: 45px;">MY Favorite Drama Scene</h2>
+                <iframe width="600" height="495" style="display: block; margin: 0 auto; width: 600px; height: 495px; border: 10px solid ivory;" src="https://www.youtube.com/embed/j0174TkAg1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        <div id="profile">
+            <h2>Studio</h2>
+            <table class="w3-table-all w3-hoverable">
+                <tr class="w3-gray">
+                    <th>-</th>
+                    <th>content</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>부산광역시 00동 00-00번지</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Operating hour</td>
+                    <td>Am:10~Pm:18</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Holiday</td>
+                    <td>매주 일요일/공휴일 </td>
+                    <td></td>
+                </tr>
+            </table>
+      </div>
+      <br><br>
+    </article>
+    <aside class="right" class="w3-container" style="display:inline-block;">
+        <div id="link" class="w3-container w3-margin-bottom" style="margin-left: 750px;">
+               <h2 style="font-family: Georgia, serif; display: block;">Location</h2>
+               <!-- 문서간의 이동 -->
+               <a href="https://map.naver.com/" target="_blank">https://map.naver.com</a><br>
+               <!-- 문서내 이동 -->
+               <h2 style="font-family: Georgia, serif; display:block;">work of potho</h2>
+               <a href="#photo">Click</a>
+           </div>
+           <section>
+            <div id="login" class="w3-container" style=" margin-left: 750px; display:block;">
+                <h3 style="font-family: Georgia, serif; font-size: 30px; display: inline-block;" >login</h3>
+                ID :<input type="text" name="" id="id"><br>
+                PW :<input type="password" name="" id="pw"><br>
+                <button onclick="login();" style="background-color: lightgoldenrodyellow;" >확인</button><button onclick="cancel();" style="background-color:lightgoldenrodyellow;">취소</button>
+            </div>
+            <div id="demo" class="w3-container">
+                <h2 class="w3-center"> </h2>
+                <div id="productList">
+    
+                </div>
+                </table>
+            </div>
+        </section>
+        </aside>
+    </section>
+    <footer class="w3-gray w3-container w3-text-white w3-margin-bottom;"> 
+        &copy; Pothographer Jiyun <br>
+        email : wldbszlffk11@naver.com<br>
+        number : 010 - 0000 - 0000<br>
+        SNS : <i class="fa fa-facebook-square" style="font-size: 24px;"></i>
+              <i class="fa fa-instagram" style="font-size: 24px;"></i>
+    
+    </footer>
+</body>
+</html>
